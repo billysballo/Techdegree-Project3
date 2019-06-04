@@ -1,0 +1,269 @@
+/*================MAIN STYLES ===============*/
+
+
+header h1 {
+  background: #42bcf4;
+  color: white;
+  font-family: 'Roboto', serif;
+  margin-top: 0;
+  padding: .65em 0;
+  text-align: center;
+}
+
+main h2 {
+  font-family: 'Roboto', serif;
+  text-align: center;
+}
+
+main p {
+  color: grey;
+  font-family: 'Montserrat', serif;
+  font-size: 1.1em;
+  padding-bottom: 1.3em;
+  text-align: center;
+}
+fieldset {
+  border: none;
+}
+hr {
+  padding: 3px;
+  border-top: 4px solid black;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.first-field{
+border-bottom: 2px solid black;
+
+}
+
+.second-field{
+  margin-top: 15px;}
+
+form{
+  min-height: calc(100vh - 40px);
+}
+
+/*===========
+=================
+                  FORM
+=================
+==========*/
+form{
+
+ background-image:linear-gradient(lightgrey, lightblue, grey);
+}
+
+legend {
+  font-family: 'Montserrat', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  width: 100%;
+  max-width: 1025px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+
+  background-color: lightgrey;
+  font-size: 18px;
+  line-height: 3vh;
+  margin: 9px 0 9px 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+::placeholder  {
+  padding-left: 8px;
+  text-align: left;
+}
+
+
+
+
+.info-postcode {
+  display:block;
+  width:50%;
+  line-height: 1.15;
+}
+
+#postcode {
+  width: 100%;
+}
+.news input,
+.news label,
+.newsletter input,
+.newsletter label {
+  display: inline-block;
+}
+
+.The-title{;
+  margin-bottom: 5px
+}
+
+.news-check1{
+ margin-top: 5px;
+
+}
+[class^="news-check"]{
+    padding-bottom: 1em;
+}
+
+.contact {
+  border-bottom: 1.5px black solid;
+  margin-bottom: 1em;
+}
+
+.The-title,
+.news-title {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 10px 0;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.comment-box {
+  display: block;
+  font-size: 17px;
+  padding-top: 8px;
+}
+
+.newsletter {
+  margin-top: .5em;
+}
+
+.radio1 {
+  padding-bottom: 1em;
+  padding-top: .5em;
+}
+
+.radio2 {
+  padding-bottom: 1em;
+}
+
+textarea {
+
+  box-shadow: 5px 10px 18px #888888;
+  background-color: #bcf2e4;
+  font-family: 'Montserrat', serif;
+  height: 80px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: darkblue;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  background: #42bcf4;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 40px;
+  padding-top: 1.5em;
+  font-size: 20px;
+  
+}
+/*===========
+=================
+                  STATES
+=================
+==========*/
+
+button:hover {
+  background-color: black;
+}
+
+input[type]:focus,
+select:focus,
+input[type]:hover,
+select:hover,
+ {
+  -webkit-transition: height 8s; /* For Safari 3.1 to 6.0 */
+  transition: height 8s;
+  height: 2em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  background-color: white;
+}
+
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  text-decoration: underline overline; 
+}
+
+/*===========
+=================
+                  MEDIA Q
+=================
+==========*/
+
+@media (min-width: 768px) {
+
+.contact {
+  padding-top: 1.5em;
+}
+
+  form {
+    width: 600px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .user-info input,
+   select {
+    flex-basis: 75%;
+  }
+
+  .user-info label,
+  select + label {
+    margin: auto;
+    margin-left: 0;
+  }
+
+
+  .user-info,
+  .info-postcode {
+    align-items: center;
+    display: flex;
+  }
+
+  .info-postcode {
+    justify-content: end;
+  }
+
+  .info-postcode input {
+    max-width: 30%
+  }
+
+  label.postcodes {
+    flex-basis: 49%
+  }
+
+  textarea {
+    height: 175px;
+  }
+
+}
