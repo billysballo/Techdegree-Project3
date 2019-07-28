@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="css/normalize.css" rel="stylesheet"/>
+    <link  href="css/styles.css" rel="stylesheet"/>
+    <link  href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+   
+    <title>My Form</title>
+  </head>
+  <body>
+<header>
+  <h1>Code Review</h1>
+</header>
+
+<main>
+  <h2>Signup for Our Newsletter</h2>
+  <p>Get the latest news on how your code is<br>
+     doing right in your inbox</p>
+
+    <hr>
+
+    <form action="index.html" method="post">
+      <fieldset class="first-field">
+          <legend class="contact">Contact Information</legend>
+
+      <div class="user-info">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" placeholder="required" required>
+      </div>
+
+      <div class="user-info">
+        <label for="email">Email Adress</label>
+        <input type="email" id="email" name="user_email" placeholder="required" required>
+      </div>
+
+      <div class="user-info">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="user_phone">
+      </div>
+
+      <div class="user-info">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="user_address" >
+      </div>
+
+      <div class="user-info">
+        <label for="city">City</label>
+        <input type="text" id="city" name="user_city" placeholder="Place of living">
+      </div>
+
+      <div class="info-postcode">
+       <label class="postcodes" for="postcode"><span>PostCode</span></label>
+       <input type="text" id="postcode" name="user_postcode" placeholder="No spaces">
+     </div>
+
+      <div class="user-info">
+        <label class="countries" for="country">Country</label>
+        <select id="country" name="user_country">
+        	<option value="UK">United Kingdom</option>
+        	<option value="ES">Spain</option>
+        	<option value="IT">Italy</option>
+        	<option value="FR">France</option>
+        	<option value="DE">Germany</option>
+        	<option value="AU">Austria</option>
+          <option value="IE">Ireland</option>
+          <option value="PT">Portugal</option>
+         </select>
+       </div>
+
+
+
+
+   </fieldset>
+ 
+   <fieldset class="second-field">
+
+    <legend class="newsletter">Newsletter</legend>
+
+   <div class="newsletter">
+
+     <label class="The-title">Select the Newsletters you would like to receive</label><br>
+
+      <input type="checkbox" id="html-news" value="html-news" name="user_newsletter">
+      <label for="html-news" class="news-check1">HTML news</label><br>
+
+     <input type="checkbox" id="css-news" value="css-news" name="user_newsletter">
+     <label for="css-news" class="news-check2">CSS news</label><br>
+
+      <input type="checkbox" id="javascript-news" value="javascrip-newst" name="user_newsletter">
+      <label for="javascript-news" class="news-check3">Javascript news</label>
+    </div>
+
+    <div class="news">
+        <label class="news-title">Newsletter format</label><br>
+        <input type="radio" id="html-news-format" value="html-news-format" name="user_format">
+        <label for="html-news-format" class="radio1">HTML</label><br>
+
+        <input type="radio" id="text-format" value="text-format" name="user_format">
+        <label for="text-format" class="radio2">Plain text</label><br>
+    </div>
+
+        <label class="comment-box" for="topics">Other topics you'd like to hear about </label><br>
+        <textarea id="topics" name="user_other"></textarea>
+
+        <button type="submit">Sign Up</button>
+
+    </fieldset>
+
+
+    </form>
+ </main>
+
+    <footer>
+      <p><a href="#">&copy;Copyright The Code Review</a></p>
+    </footer>
+  </body>
+</html>
